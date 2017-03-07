@@ -1,0 +1,28 @@
+//output:ttt.html
+html
+  head
+    link(href='ttt.min.css' rel='stylesheet')
+    script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+    script(src='ttt.js')
+  body
+    div.ttt-container 
+      div.ttt-background
+        h1.title TIC-TAC-TOE
+        div.ttt-body 
+          - for(var i = 1; i <= 9; i++) {
+              div(class='ttt-element' class="element"+i id=i-1)  
+          -}
+        div.buttons
+          div.reset
+            h4.reset-text RESET
+          div.score
+            h4.score-player-one-text PLAYER ONE: 
+              span.score-player-one 0
+            h4.score-player-two-text PLAYER TWO: 
+              span.score-player-two 0
+          div.multiplayer
+            h4.multiplayer-text MULTIPLAYER
+      
+      
+  
+    

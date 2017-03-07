@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower|Shadows+Into+Light')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400')
+
+body
+  margin: 0
+  padding: 0
+  background-color: #332626
+
+.ttt-container
+  display: flex
+  width: 100%
+  height: 100%
+  flex-direction: column
+
+.ttt-background
+  width: 850px
+  height: 850px
+  margin: auto
+  display: flex
+  flex-direction: column
+
+.ttt-body
+  width: 600px
+  height: 600px
+  min-width: 600px
+  min-height: 600px
+  background-color: #2f4f4f
+  margin: auto
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  border-radius: 50px
+
+
+.buttons
+  width: 100%
+  display: flex
+  position: relative
+  margin-top: 45px
+  justify-content: center
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  color: #313131
+  .reset, .multiplayer
+    width: 20%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #ECDCC9
+    border-radius: 5px
+    height: 4em
+    min-height: 4em
+  .score
+    width: 50%
+    display: flex
+    flex-direction: row
+    background-color: #EDD4B2
+    border-radius: 5px
+    margin-left: 10%
+    margin-right: 10%
+    height: 4em
+    min-height: 4em
+    h4
+      width: 50%
+      text-align: center
+    .score-player-one-text
+      border-right: solid #313131 1px
+
+.title
+  color: white
+  font-family: 'Coming Soon', cursive
+  position: relative
+  text-align: center
+  width: 100%
+  margin-top: 25px
+  font-size: 3em
+
+.ttt-element
+  box-sizing: border-box
+  z-index: 1
+  width: 200px
+  height: 200px
+  display: flex
+  color: white
+  border: solid white 1px
+  justify-content: center
+  align-items: center
+  font-size: 5em
+  font-family: 'Coming Soon', cursive
+  &:hover
+    color: rgb(25,25,25)
+    background-color: white
+
+.element1
+  border-top-left-radius: 50px
+
+.element3
+  border-top-right-radius: 50px
+
+.element7
+  border-bottom-left-radius: 50px
+
+.element9
+  border-bottom-right-radius: 50px
